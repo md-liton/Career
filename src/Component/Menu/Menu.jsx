@@ -6,10 +6,10 @@ const Menu = () => {
   const [isSubDropdownVisible, setSubDropdownVisible] = useState(false);
   return (
     <div>
-      <ul className='flex justify-center items-center gap-[35px]'>
-        <li className='cursor-pointer'>Home</li>
-        <li className='cursor-pointer relative' onMouseEnter={() => setDropdownVisible(true)} onMouseLeave={() => setDropdownVisible(false)}>
-          <div>jobs</div>
+      <ul className='md:flex justify-center items-center gap-[35px]'>
+        <li className='cursor-pointer py-1 md:py-0'>Home</li>
+        <li className='cursor-pointer relative py-1 md:py-0' onMouseEnter={() => setDropdownVisible(true)} onMouseLeave={() => setDropdownVisible(false)}>
+          jobs
           {isDropdownVisible && (
             <div className="job_item absolute text-white text-[14px] bg-[#F5F5F3] top-[20px] left-[-50px]  duration-400 z-[99] flex justify-between text-center ">
               <div className=" mx-auto text-primary">
@@ -45,9 +45,9 @@ const Menu = () => {
             </div>
           )}
         </li>
-        <li className='cursor-pointer'>Apply</li>
-        <li className='cursor-pointer'>Notice</li>
-        <li className='cursor-pointer'>Contact</li>
+        <li className='cursor-pointer py-1 md:py-0 '>Apply</li>
+        <li className='cursor-pointer py-1 md:py-0'>Notice</li>
+        <li className='cursor-pointer py-1 md:py-0'>Contact</li>
       </ul>
     </div>
   )
