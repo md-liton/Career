@@ -6,8 +6,9 @@ const Menu = () => {
   const [isSubDropdownVisible, setSubDropdownVisible] = useState(false);
   return (
     <div>
-      <ul className='md:flex justify-center items-center gap-[35px]'>
+      <ul className='md:flex justify-center items-center md:gap-[35px]'>
         <li className='cursor-pointer py-1 md:py-0'>Home</li>
+        <li className='cursor-pointer py-1 md:py-0'>Aboute us</li>
         <li className='cursor-pointer relative py-1 md:py-0' onMouseEnter={() => setDropdownVisible(true)} onMouseLeave={() => setDropdownVisible(false)}>
           jobs
           {isDropdownVisible && (

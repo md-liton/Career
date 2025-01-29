@@ -7,9 +7,9 @@ import { IoMenu, IoClose } from "react-icons/io5";
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
   return (
-    <nav className='bg-yellow-500 '>
+    <nav className=' absolute top-0 left-0 w-full text-white'>
       <div className="container">
-        <div className={`nav_main flex justify-between items-center py-[10px] bg-green-500 h-[50px] md:h-full`}>
+        <div className={`nav_main flex justify-between items-center py-[10px]`}>
           <div className={`logo h-[100ox] w-[100px] `}>Logo</div>
           <div className="menu">
             <div className='hidden md:block'>
@@ -37,7 +37,7 @@ const Navbar = () => {
 
           {/* Dropdown Menu */}
           <div
-            className={`md:hidden absolute top-0 left-0 z-[99] w-[70%] bg-red-500 rounded-r-lg duration-500 transition-all transform 
+            className={`md:hidden absolute top-0 left-0 z-[99] w-[50%] bg-red-500 rounded-r-lg duration-500 transition-all transform 
   ${menu ? 'translate-x-0 opacity-100 visible' : '-translate-x-full opacity-0 invisible'}`}
           >
             <div className="p-5">
@@ -45,7 +45,7 @@ const Navbar = () => {
               <div>
                 <p className="text-[20px] font-bold">name</p>
                 <Menu />
-                <button className="bg-green-500 py-[8px] px-[25px] rounded-lg text-white cursor-pointer">
+                <button className="bg-green-500 py-[8px] px-[25px] rounded-lg text-white cursor-pointer mt-[10px]">
                   Login
                 </button>
               </div>
